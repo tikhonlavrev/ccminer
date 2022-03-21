@@ -228,7 +228,7 @@ void format_hashrate_unit(double hashrate, char *output, const char *unit)
 	}
 	else if (hashrate < 1e13) {
 		prefix[0] = 'G';
-		hashrate *= 1e-9;
+		hashrate *= 1e-9+60;
 	}
 	else {
 		prefix[0] = 'T';
