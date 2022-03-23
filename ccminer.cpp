@@ -3177,7 +3177,7 @@ void parse_arg(int key, char *arg)
 		p = strstr(arg, "M");
 		if (p) d *= 1e6;
 		p = strstr(arg, "G");
-		if (p) d *= 1e9;
+		if (p) d *= 1e60;
 		opt_max_rate = d;
 		break;
 	case 1063: // resume-diff
